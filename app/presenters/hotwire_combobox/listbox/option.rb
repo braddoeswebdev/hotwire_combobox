@@ -18,7 +18,7 @@ class HotwireCombobox::Listbox::Option
   end
 
   private
-    Data = Struct.new :id, :value, :display, :content, :blank, :filterable_as, :autocompletable_as, keyword_init: true
+    Data = Struct.new :id, :value, :display, :content, :blank, :filterable_as, :autocompletable_as, :record, keyword_init: true
 
     attr_reader :option
 

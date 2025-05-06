@@ -82,7 +82,7 @@ class HotwireCombobox::Listbox::Item
     end
 
     def render_content(render_opts: render_in, object:, attrs:)
-      view.render(**render_opts.reverse_merge(object: object, locals: { combobox_display: attrs[:display], combobox_value: attrs[:value] }))
+      view.render(**render_opts.reverse_merge(object: object, locals: { record: attrs[:record], combobox_display: attrs[:display], combobox_value: attrs[:value] }))
     end
 
     def blank_option
