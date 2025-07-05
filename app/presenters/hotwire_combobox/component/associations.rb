@@ -1,8 +1,8 @@
 module HotwireCombobox::Component::Associations
   private
     def infer_association_name
-      if name.end_with?("_id")
-        name.sub(/_id\z/, "")
+      if name.match?(/_\w?id\z/)
+        name.sub(/_\w?id\z/, "")
       end
     end
 
